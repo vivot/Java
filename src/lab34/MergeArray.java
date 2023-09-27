@@ -28,13 +28,12 @@ public class MergeArray {
 
         }
         // sort Merge array
-        for (int i = 0; i <myMergeArray.length ; i++) {
-            for (int m = 0; m < myMergeArray.length-1; m++) {
-                if (myMergeArray[m]>myMergeArray[m+1])
-                {
-                    int tempValue=myMergeArray[m];
-                    myMergeArray[m]=myMergeArray[m+1];
-                    myMergeArray[m+1]=tempValue;
+        for (int i = 0; i < myMergeArray.length; i++) {
+            for (int m = 0; m < myMergeArray.length - 1; m++) {
+                if (myMergeArray[m] > myMergeArray[m + 1]) {
+                    int tempValue = myMergeArray[m];
+                    myMergeArray[m] = myMergeArray[m + 1];
+                    myMergeArray[m + 1] = tempValue;
                 }
             }
         }
